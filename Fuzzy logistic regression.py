@@ -137,6 +137,8 @@ class FuzzyLogicClassifier:
                 self.l_params -= self.learning_rate * loss_gradient_l
                 self.beta_params -= self.learning_rate * loss_gradient_beta
                 self.r_params -= self.learning_rate * loss_gradient_r
+        self.l_params = np.minimum(self.l_params, self.beta_params)
+        self.r_params = np.maximum(self.r_params, self.beta_params)
 
     # Model evaluation
     def evaluate(self, X_test, y_test):
@@ -189,3 +191,4 @@ def main(file_path):
 # main function
 file_path = r"data.csv"
 main(file_path)
+
