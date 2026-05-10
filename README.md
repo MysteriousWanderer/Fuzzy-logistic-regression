@@ -2,9 +2,6 @@
 
 Official implementation of the paper **"A fuzzy logistic-based ensemble framework with heterogeneous weighting effects for credit risk evaluation"** (Applied Soft Computing, 2026).
 
-> **Authors:** Jianan Xu, Yuntao Mao, Lichun Wang  
-> **Institution:** Beijing Jiaotong University
-
 ## 📌 Overview
 
 Credit scoring faces three critical challenges: **class imbalance**, **data fuzziness** (subjectivity, uncertainty, fuzzy variable relationships), and **model interpretability**. This repository provides a novel ensemble model – **Fuzzy logistic‑FWE** – that integrates **fuzzy logistic regression** with a **fuzzy heterogeneous weighting** strategy to address all three issues simultaneously.
